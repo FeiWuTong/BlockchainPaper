@@ -92,11 +92,13 @@
 
 > 2019
 
->> Stefanos Leonardos, Weighted Voting on the Blockchain: Improving Consensus in Proof of Stake Protocols, IEEE International Conference on Blockchain and Cryptocurrency, 2019, 提出使用与用户行为相关的用户属性作为权重，在PoS协议中进行权重投票，并采用权重计票方式来保证协议的安全性和稳定性。
+>> Stefanos Leonardos et al, Weighted Voting on the Blockchain: Improving Consensus in Proof of Stake Protocols, IEEE International Conference on Blockchain and Cryptocurrency, 2019, 提出使用与用户行为相关的用户属性作为权重，在PoS协议中进行权重投票，并采用权重计票方式来保证协议的安全性和稳定性。
 
 >> Jiaping Wang, Hao Wang, Monoxide: Scale out Blockchains with Asynchronous Consensus Zones, Proceedings of the 16th USENIX Symposium on Networked Systems Design and Implementation, 2019, 提出异步共识空间的概念，将区块链系统进行交易和状态的部分分片，分片后保证交易的最终原子性（即前后一致性），并提出连弩挖矿保证分片后系统的安全性不变，在保证安全性的前提下大幅提升区块链的TPS（取决于并行的异步空间数量），可以提升至上万TPS，并大幅降低节点的存储开销。
 
 >> Eduardo Castell´o Ferrer, The Blockchain: A New Framework for Robotic Swarm Systems, Proceedings of the Future Technologies Conference, 2019, 将区块链与机器人集群系统结合在一起，使其更加灵活与安全，并解决了在机器人集群研究领域的四个亟待解决的问题。
+
+>> Vitalik Buterin et al, Incentives in Ethereum’s Hybrid Casper Protocol, IEEE International Conference on Blockchain and Cryptocurrency, 2019, 文章对Hybrid Casper FFG协议概括总结，该协议为覆盖以太坊PoW区块链的一种PoS Checkpoint协议，其激励机制保证了区块链的活性并提供了高于标准PoW协议的安全性。另外通过在区块链上部署该协议的智能合约，作者还分析了其存在的一些问题和潜在的缺陷。
 
 > 2018
 
@@ -122,6 +124,10 @@
 
 >> Bram Cohen and Krzysztof Pietrzak, Simple Proofs of Sequential Work, Proceedings of Eurocrypt, 2018, 文章提出了一种更简单且更有效率的连续工作证明，用空间证明取代PoW来保证加密货币（区块链）的安全，且其空间复杂度最低可降至log(N)级别。
 
+>> Ben Fisch et al, Scaling Proof-of-Replication for Filecoin Mining, https://web.stanford.edu/~bfisch/porep_short.pdf, 2018, 解释了PoR的细节原理以及各类相关技术、算法与协议，并提出可扩展至大文件的块链连续编码算法对PoR进行扩展。
+
+>> Yonatan Sompolinsky and Aviv Zohar, PHANTOM, GHOSTDAG: Two Scalable BlockDAG protocols, https://eprint.iacr.org/2018/104.pdf, 2018, 文章提出了基于PoW的共识协议Phantom，其可以将中本聪型区块链转化为DAG型区块，在保证安全的情况下适应区块链的高吞吐量、达到扩展区块链的效果。其通过一种贪心算法来分辨区块的有效性，进而保证DAG区块顺序的稳定，诚实节点最终能达成一致共识。
+
 > 2017
 
 >> Marco Iansiti and Karim R. Lakhani, The Truth About Blockchain, Harvard Business Review, 2017, 对区块链的发展进行正反两面的分析，说明其虽具备极大的发展潜力与市场，但仍需要很长的时间去适应、发展并成熟化。
@@ -141,6 +147,8 @@
 >> Loi Luu et al, A Secure Sharding Protocol For Open Blockchains, CCS'16, 2016, 项目名为Elastico，最早提出在存在拜占庭错误的情况下将区块链安全地进行分片的论文，通过分片的方式提高区块链的tps。
 
 >> Joseph Poon and Thaddeus Dryja, The Bitcoin Lightning Network: Scalable Off-Chain Instant Payments, https://lightning.network/lightning-network-paper.pdf, 2016, 闪电网络的白皮书，通过开启微支付通道，在不影响去中心化的特性下，实现在链下的转账与跨链交易，从而在一定程度上解决Bitcoin的扩展性问题，大幅提升tps。
+
+>> Yonatan Sompolinsky et al, Spectre: Serialization of proof-of-work events: Confirming transactions via recursive elections, https://eprint.iacr.org/2016/1159.pdf, 2016, 提出序列化PoW事件并通过递归选举确认交易，是对区块链的一种扩展方案，其可在任意出块速率下正常运作，即可大幅提高tps。其解决分叉的方案是在DAG结构中采用对拥有最多子区块的区块进行不同分支的归并，成为有效的主区块加入账本。
 
 > 2015
 
@@ -163,6 +171,8 @@
 > 2019
 
 >> Martin Westerkamp, Verifiable Smart Contract Portability, IEEE International Conference on Blockchain and Cryptocurrency, 2019, 提出并实现了无需信任机构执行移植过程即可移植不同区块链上智能合约的状态与功能，前提是合约的运作都是EVM，且第三方库的引用需要维护额外一张映射表。
+
+>> Krishnendu Chatterjee et al, Probabilistic Smart Contracts: Secure Randomness on the Blockchain, IEEE International Conference on Blockchain and Cryptocurrency, 2019, 对于受限于非概率性的智能合约，文章提出了一种新的博弈论方法用于在区块链中产生可证明的、不可操纵的伪随机数，其可使智能合约获取该可信的随机性，以适应需要完全依赖随机性的应用与合约。
 
 > 2018
 
