@@ -128,11 +128,23 @@
 
 >> Yonatan Sompolinsky and Aviv Zohar, PHANTOM, GHOSTDAG: Two Scalable BlockDAG protocols, https://eprint.iacr.org/2018/104.pdf, 2018, 文章提出了基于PoW的共识协议Phantom，其可以将中本聪型区块链转化为DAG型区块，在保证安全的情况下适应区块链的高吞吐量、达到扩展区块链的效果。其通过一种贪心算法来分辨区块的有效性，进而保证DAG区块顺序的稳定，诚实节点最终能达成一致共识。
 
+>> Storj Labs, Inc., Storj: A Decentralized Cloud Storage Network Framework, https://storj.io/whitepaper, 2018, storj的白皮书，介绍了构建该去中心化云存储网络的原理与实现。
+
+>> Howard Wu, DIZK: A Distributed Zero-Knowledge Proof System, USENIX Security, 2018, 文章指出了现有的产生零知识证明的系统开销很大，且受到单个机器内存资源的限制，无法应用于实际。故提出DIZK系统，通过在计算机集群中产生零知识证明，并采用zkSNARK技术，将计算能力与响应速度大幅提升（两个数量级），并用该系统研究不同的安全应用。
+
+>> Mustafa Al-Bassam, Alberto Sonnino, Vitalik Buterin, Fraud Proofs: Maximising Light Client Security and Scaling Blockchains with Dishonest Majorities, https://arxiv.org/pdf/1809.09044.pdf, 2019, 文章提出了通过虚假证明来最大限度的提升轻客户端的安全性，并在弱假设条件下（即可能有大多数不诚实节点）来扩展区块链。通过产生与接收“某个区块违反了协议规则”的虚假证明，并结合概率抽样技术来证明一个区块的数据都是有效且可获取的，以此消除“大多数节点是诚实的”强假设条件，进而可进行区块链的链上扩展。
+
 > 2017
 
 >> Marco Iansiti and Karim R. Lakhani, The Truth About Blockchain, Harvard Business Review, 2017, 对区块链的发展进行正反两面的分析，说明其虽具备极大的发展潜力与市场，但仍需要很长的时间去适应、发展并成熟化。
 
 >> Marc Pilkington, Blockchain technology: principles and applications, Research handbook on digital transformations, 2017, 对区块链技术的主要原理进行阐述并举例一些重要的、前沿的区块链的应用。
+
+>> Protocol Labs, Filecoin: A Decentralized Storage Network, http://filecoin.io/filecoin.pdf, 2017, filecoin的白皮书，介绍了该去中心化存储网络的原理与理论技术。
+
+>> Harry Kalodner et al, BlockSci: Design and applications of a blockchain analysis platform, https://arxiv.org/pdf/1709.02489.pdf, 2017, 文章提出了开源的区块链分析工具BlockSci，用于分析不同区块链的任务、数据库，且速度快于已有的工具。
+
+>> Sun SF et al, RingCT 2.0: A Compact Accumulator-Based (Linkable Ring Signature) Protocol for Blockchain Cryptocurrency Monero, Computer Security – ESORICS 2017, 2017, 该文提出了加密货币Monero的协议RingCT2.0的版本，通过提出单向域累加器收集可连接的环形签名，以降低交易中签名的空间开销（此时签名的大小与账户组的数量无关，即非线性关系）。
 
 > 2016
 
@@ -176,7 +188,7 @@
 
 > 2018
 
->> 
+>> Beltran Borja Fiz Pontiveros, Recycling Smart Contracts: Compression of the Ethereum Blockchain, 9th IFIP International Conference on New Technologies, Mobility and Security, 2018, 文章提出使用一种新的伪操作码作为指针来重复调用已部署的合约，进而达到对以太坊区块链的合约压缩，减少空间开销。
 
 > 2017
 
