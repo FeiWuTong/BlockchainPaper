@@ -20,13 +20,17 @@
 
 > ### 引用
 
+>> 相关工作（Related work）部分引用的论文。
+
 > ### Website
 
 >> https://www.jianshu.com/p/aec8faa50bd1
 
 >> http://blockchain.whu.edu.cn/blockchainpapers/
 
->> https://github.com/decrypto-org/blockchain-papers
+>> https://www.the-blockchain.com/category/news/
+
+>> https://ethfans.org/
 
 > ### Forum
 
@@ -34,7 +38,21 @@
 
 > ### Blog
 
+>> 康奈尔大学Elaine Shi教授，加密货币、分布式系统、随机算法和编程语言，http://elaineshi.com/
+
+>> 康奈尔大学Rafael Pass教授，与Elaine教授常合作发区块链相关的论文，http://www.cs.cornell.edu/~rafael/
+
+>> CryptoLUX，卢森堡大学密码学研究组，https://www.cryptolux.org/index.php/Home
+
+>> 卢森堡大学的与加密、区块链相关的研究组，https://wwwen.uni.lu/snt
+
 > ### Github
+
+>> https://github.com/ethereum/wiki/wiki
+
+>> https://github.com/bitcoin/bitcoin
+
+>> https://github.com/decrypto-org/blockchain-papers
 
 -------------------------------------
 
@@ -84,6 +102,10 @@
 
 >> Yossi Gilad, Rotem Hemo, Silvio Micali et al, Algorand: Scaling Byzantine Agreements for Cryptocurrencies, SOSP'17, 2017, 提出新的拜占庭协议，通过委员会（共识组）的轮换机制以及用户权重进行VRFs随机抽签来保证BFT的安全性与活性，并提升了区块链的吞吐量、降低交易延迟、消除分叉。
 
+> 合约
+
+>> N. Szabo, Smart contracts: Formalizing and securing relationships on public networks, First Monday, 2(9), Sept. 1997. http://firstmonday.org/ojs/index.php/fm/article/view/548/469, 1997, 最早提出智能合约概念的文章，定义了智能合约的形式与分析了其应用领域。
+
 -------------------------------------
 
 # 区块链
@@ -99,6 +121,8 @@
 >> Eduardo Castell´o Ferrer, The Blockchain: A New Framework for Robotic Swarm Systems, Proceedings of the Future Technologies Conference, 2019, 将区块链与机器人集群系统结合在一起，使其更加灵活与安全，并解决了在机器人集群研究领域的四个亟待解决的问题。
 
 >> Vitalik Buterin et al, Incentives in Ethereum’s Hybrid Casper Protocol, IEEE International Conference on Blockchain and Cryptocurrency, 2019, 文章对Hybrid Casper FFG协议概括总结，该协议为覆盖以太坊PoW区块链的一种PoS Checkpoint协议，其激励机制保证了区块链的活性并提供了高于标准PoW协议的安全性。另外通过在区块链上部署该协议的智能合约，作者还分析了其存在的一些问题和潜在的缺陷。
+
+>> Mustafa Al-Bassam, Alberto Sonnino, Vitalik Buterin, Fraud Proofs: Maximising Light Client Security and Scaling Blockchains with Dishonest Majorities, https://arxiv.org/pdf/1809.09044.pdf, 2019, 文章提出了通过虚假证明来最大限度的提升轻客户端的安全性，并在弱假设条件下（即可能有大多数不诚实节点）来扩展区块链。通过产生与接收“某个区块违反了协议规则”的虚假证明，并结合概率抽样技术来证明一个区块的数据都是有效且可获取的，以此消除“大多数节点是诚实的”强假设条件，进而可进行区块链的链上扩展。
 
 > 2018
 
@@ -126,13 +150,13 @@
 
 >> Ben Fisch et al, Scaling Proof-of-Replication for Filecoin Mining, https://web.stanford.edu/~bfisch/porep_short.pdf, 2018, 解释了PoR的细节原理以及各类相关技术、算法与协议，并提出可扩展至大文件的块链连续编码算法对PoR进行扩展。
 
->> Yonatan Sompolinsky and Aviv Zohar, PHANTOM, GHOSTDAG: Two Scalable BlockDAG protocols, https://eprint.iacr.org/2018/104.pdf, 2018, 文章提出了基于PoW的共识协议Phantom，其可以将中本聪型区块链转化为DAG型区块，在保证安全的情况下适应区块链的高吞吐量、达到扩展区块链的效果。其通过一种贪心算法来分辨区块的有效性，进而保证DAG区块顺序的稳定，诚实节点最终能达成一致共识。
+>> Yonatan Sompolinsky and Aviv Zohar, PHANTOM, GHOSTDAG: Two Scalable BlockDAG Protocols, https://eprint.iacr.org/2018/104.pdf, 2018, 文章提出了基于PoW的共识协议Phantom，其可以将中本聪型区块链转化为DAG型区块，在保证安全的情况下适应区块链的高吞吐量、达到扩展区块链的效果。其通过一种贪心算法来分辨区块的有效性，进而保证DAG区块顺序的稳定，诚实节点最终能达成一致共识。
 
 >> Storj Labs, Inc., Storj: A Decentralized Cloud Storage Network Framework, https://storj.io/whitepaper, 2018, storj的白皮书，介绍了构建该去中心化云存储网络的原理与实现。
 
 >> Howard Wu, DIZK: A Distributed Zero-Knowledge Proof System, USENIX Security, 2018, 文章指出了现有的产生零知识证明的系统开销很大，且受到单个机器内存资源的限制，无法应用于实际。故提出DIZK系统，通过在计算机集群中产生零知识证明，并采用zkSNARK技术，将计算能力与响应速度大幅提升（两个数量级），并用该系统研究不同的安全应用。
 
->> Mustafa Al-Bassam, Alberto Sonnino, Vitalik Buterin, Fraud Proofs: Maximising Light Client Security and Scaling Blockchains with Dishonest Majorities, https://arxiv.org/pdf/1809.09044.pdf, 2019, 文章提出了通过虚假证明来最大限度的提升轻客户端的安全性，并在弱假设条件下（即可能有大多数不诚实节点）来扩展区块链。通过产生与接收“某个区块违反了协议规则”的虚假证明，并结合概率抽样技术来证明一个区块的数据都是有效且可获取的，以此消除“大多数节点是诚实的”强假设条件，进而可进行区块链的链上扩展。
+>> Chenxing Li et al, Scaling Nakamoto Consensus to Thousands of Transactions per Second, arXiv preprint arXiv:1805.03870, 2018, 提出了一种基于DAG的区块链协议，其不会丢弃任何在分叉上的区块，通过区块的顺序性构造一致的交易总顺序并将其加入区块链的账本，即允许主链外的区块为吞吐量做贡献，其区块的利用率为100%，远高于比特币和Ghost，因此可以提升区块链的吞吐量。
 
 > 2017
 
@@ -145,6 +169,8 @@
 >> Harry Kalodner et al, BlockSci: Design and applications of a blockchain analysis platform, https://arxiv.org/pdf/1709.02489.pdf, 2017, 文章提出了开源的区块链分析工具BlockSci，用于分析不同区块链的任务、数据库，且速度快于已有的工具。
 
 >> Sun SF et al, RingCT 2.0: A Compact Accumulator-Based (Linkable Ring Signature) Protocol for Blockchain Cryptocurrency Monero, Computer Security – ESORICS 2017, 2017, 该文提出了加密货币Monero的协议RingCT2.0的版本，通过提出单向域累加器收集可连接的环形签名，以降低交易中签名的空间开销（此时签名的大小与账户组的数量无关，即非线性关系）。
+
+>> Rafael Pass and Elaine Shi, Hybrid Consensus: Efficient Consensus in the Permissionless Model, In LIPIcs-Leibniz International Proceedings in Informatics, 2017, 指出区块链中大部分无许可的协议都是基于网络是同步的假设，而在现实网络中的异步或者部分同步模型中其无法达成一致性。因此通过结合传统与区块链形式的共识协议，提出了混合共识协议，使其在现实网络环境的条件下有可能在无许可的共识中进行响应。且有助于理解无许可模型以及无许可共识协议与传统共识协议的区别与联系。
 
 > 2016
 
@@ -161,6 +187,10 @@
 >> Joseph Poon and Thaddeus Dryja, The Bitcoin Lightning Network: Scalable Off-Chain Instant Payments, https://lightning.network/lightning-network-paper.pdf, 2016, 闪电网络的白皮书，通过开启微支付通道，在不影响去中心化的特性下，实现在链下的转账与跨链交易，从而在一定程度上解决Bitcoin的扩展性问题，大幅提升tps。
 
 >> Yonatan Sompolinsky et al, Spectre: Serialization of proof-of-work events: Confirming transactions via recursive elections, https://eprint.iacr.org/2016/1159.pdf, 2016, 提出序列化PoW事件并通过递归选举确认交易，是对区块链的一种扩展方案，其可在任意出块速率下正常运作，即可大幅提高tps。其解决分叉的方案是在DAG结构中采用对拥有最多子区块的区块进行不同分支的归并，成为有效的主区块加入账本。
+
+>> Andrew Miller et al, The Honey Badger of BFT Protocols, In Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security, 2016, 提出了HoneyBadgerBFT，为首篇实用的异步BFT协议。且基于BFT协议提出了原子广播协议，优化了BFT中的通信复杂度，大幅提升了区块链的吞吐量，最高可达到上万的吞吐量。
+
+>> Eleftherios Kokoris-Kogias et al, Enhancing Bitcoin Security and Performance with Strong Consistency via Collective Signing, In Proceedings of the 25th USENIX Conference on Security Symposium, 2016, 提出了一种新的拜赞庭共识协议，通过可扩展的共同签名达成秒级不可逆地提交交易事务，消除了双花以及自私挖矿的问题，且优化了基于BFT区块链的性能。（Byzcoin）
 
 > 2015
 
@@ -188,11 +218,7 @@
 
 > 2018
 
->> Beltran Borja Fiz Pontiveros, Recycling Smart Contracts: Compression of the Ethereum Blockchain, 9th IFIP International Conference on New Technologies, Mobility and Security, 2018, 文章提出使用一种新的伪操作码作为指针来重复调用已部署的合约，进而达到对以太坊区块链的合约压缩，减少空间开销。
-
-> 2017
-
->> 
+>> Beltran Borja Fiz Pontiveros et al, Recycling Smart Contracts: Compression of the Ethereum Blockchain, 9th IFIP International Conference on New Technologies, Mobility and Security, 2018, 文章提出使用一种新的伪操作码作为指针来重复调用已部署的合约，进而达到对以太坊区块链中合约代码压缩的目的，减少空间开销。
 
 > 2016
 
