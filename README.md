@@ -172,6 +172,8 @@
 
 >> Rafael Pass and Elaine Shi, Hybrid Consensus: Efficient Consensus in the Permissionless Model, In LIPIcs-Leibniz International Proceedings in Informatics, 2017, 指出区块链中大部分无许可的协议都是基于网络是同步的假设，而在现实网络中的异步或者部分同步模型中其无法达成一致性。因此通过结合传统与区块链形式的共识协议，提出了混合共识协议，使其在现实网络环境的条件下有可能在无许可的共识中进行响应。且有助于理解无许可模型以及无许可共识协议与传统共识协议的区别与联系。
 
+>> Nicolas T. Courtois, Stealth Address and Key Management Techniques in Blockchain Systems, ICISSP 2017, 2017, 回顾了加密货币中密钥管理方案的发展历史，并对其相关的技术进行比较与分析，说明这些技术可以结合2个不同的ECC算法属性。文章指出区块链系统有使用SA（匿名地址）技术进行交易的趋势。文章对所有已知的SA技术进行分析并提出了一种新的、更安全的SA方法。
+
 > 2016
 
 >> Jesse Yli-Huumo et al, Where Is Current Research on Blockchain Technology?—A Systematic Review, PLOS ONE, 2016, 对截止至2016年部分关于区块链的研究作了系统性地分析，包括研究的主题、挑战和未来的方向。
